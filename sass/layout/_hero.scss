@@ -4,11 +4,11 @@
     align-items: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/office.jpg);
+    background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/office-mobile.jpg);
     background-position: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color:  #2F303A;}
+    background-color:  #2F303A;
+@include tablet{background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/office-tablet.jpg);}
+@include desktop{background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/office.jpg);}}
 .hero {
     color: $white;
     font-weight: 900;
