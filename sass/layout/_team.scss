@@ -1,0 +1,27 @@
+.company {background: $light;}
+.company__title {font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $black;
+    margin-bottom: 50px;}
+.team {display:flex;}
+.team__list {margin-right: 30px;box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;background-color: $white;}
+.team__photo {display: block; max-width: 100%; height:auto;}
+.team__div {padding:30px 32px;}
+.team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121; background-color: #FFFFFF;}
+.team__job { font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $grey;margin-top: 10px;margin-bottom:16px; background-color: #FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.2);}
