@@ -3,12 +3,75 @@
   /* Основные шрифты и цвета */
   --main-font: Roboto, sans-serif;
   --secondary-font: Raleway, sans-serif;
-  color: #212121;
-  color: #757575;
-  color: #FFFFFF;
-  color: #2196F3;
-  color: #F5F4FA;
-  color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 * {
@@ -47,16 +110,11 @@ body {
   color: #212121;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 .button {
@@ -68,7 +126,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: #2196F3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
   border-radius: 4px;
   cursor: pointer;
@@ -82,7 +139,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: #188CE8;
+  background: #2196F3;
 }
 
 button {
@@ -247,7 +304,7 @@ button {
 }
 
 .site-nav__list {
-  color: black;
+  color: #212121;
 }
 
 .contact {
@@ -277,43 +334,58 @@ button {
 .hero-section {
   max-width: 1600px;
   margin: 0 auto;
-  height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/office.jpg);
-  background-position: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2F303A;
-}
-
-.hero {
-  color: #FFFFFF;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  padding: 118px 0;
   text-align: center;
-  letter-spacing: 0.06em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office-mobile.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.hero__header {
+@media (min-width: 1200px) {
+  .hero-section {
+    padding: 200px 0;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office-mobile.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office-tablet.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office-tablet.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (-moz-min-device-pixel-ratio: 2), screen and (-o-min-device-pixel-ratio: 2/1), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/office.jpg);
+  }
+}
+.hero-section__header {
+  margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
-  display: flex;
-  max-width: 696px;
-  margin-bottom: 30px;
 }
-
-.order {
-  max-height: 50px;
-  max-width: 200px;
+@media screen and (min-width: 1200px) {
+  .hero-section__header {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .backdrop {
@@ -531,7 +603,7 @@ button {
 
 .icon-send {
   margin-left: 10px;
-  fill: #fff;
+  fill: #FFFFFF;
 }
 
 .submit2 {
@@ -542,7 +614,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background-color: #188CE8;
+  background-color: #2196F3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
@@ -756,7 +828,6 @@ button {
 }
 .links__a:hover, .links__a:focus {
   background-color: #2196F3;
-  color: #FFFFFF;
 }
 
 .links__svg {
@@ -764,7 +835,7 @@ button {
 }
 
 .links__a1 {
-  color: #FFFFFF;
+  color: #F5F4FA;
 }
 
 .clients {
@@ -877,7 +948,7 @@ button {
   overflow: hidden;
 }
 
-.portfolio__jpg {
+.portfolio__img {
   display: block;
   max-width: 100%;
   height: auto;
