@@ -6,8 +6,7 @@
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-        color: $white;
-        background: $blue;
+        color:#FFFFFF;
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
         border-radius: 4px;cursor:pointer;
         &:hover {padding: 10px 32px; 
@@ -17,8 +16,8 @@
         align-items: center;
         text-align: center;
         letter-spacing: 0.06em;
-        color: $white;
-        background: $blue;}}
+        color:#FFFFFF;
+        background: #2196F3;}}
  button {
         border:0;
         appearance: auto;
@@ -59,10 +58,10 @@
         text-align: center;
         letter-spacing: 0.03em;
         padding: 6px 22px;
-        color: $white;
+        color:#FFFFFF;;
         background: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;margin-right: 8px;border-color: $light; }
+        border-radius: 4px;margin-right: 8px;border-color: #F5F4FA; }
 .allbuttons {
         border:0;
         font-weight: 500;
@@ -70,15 +69,15 @@
         line-height: 1.62;
         text-align: center;
         letter-spacing: 0.03em;
-        color: $black;
+        color: #212121;
         padding: 6px 22px;
         left: 576px;
         top: 174px;
-        background: $light;
+        background: #F5F4FA;
         border-radius: 4px;display: flex; margin-right: 8px; border-color: #F5F4FA;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover, &:focus {color: $white;
-        background-color: $blue;
+        &:hover, &:focus {color: #FFFFFF;
+        background-color: #2196F3;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}}
     
    

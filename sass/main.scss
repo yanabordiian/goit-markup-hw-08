@@ -1,6 +1,5 @@
 @import './utils/variables.scss';
 @import './base/reset';
-@import './components/container';
 @import './components/btn';
 @import './layout/header';
 @import './layout/hero';
@@ -13,4 +12,4 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/portfolio';
-
+@import './utils/mixins';  
