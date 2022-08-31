@@ -1,16 +1,56 @@
-.clients{font-weight: 700;
-        font-size: 36px;
-        line-height: 1.16;
-        text-align: center;
+.clients {
+        width: 100%;
+        &__list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+      
+          gap: 30px;
+          @include mq(tab) {
+            grid-template-columns: 1fr 1fr 1fr;
+          }
+          @media screen and(min-width:1200px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+          }
+        }
+        &__item {
+          width: 100%;
+          @include mq(tab) {
+            width: 226px;
+          }
+          @include mq(desk) {
+            width: 170px;
+          }
+        }
+        &__link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      
+          width: 100%;
+          height: 92px;
+      
+          fill: #afb1b8;
+          border: 1px solid #afb1b8;
+          border-radius: 4px;
+          box-sizing: border-box;
+          transition: var(--anim);
+        }
+        &__link:hover,
+        &__link:focus {
+          fill: $accent-color;
+          border-color: $accent-color;
+        }
+      
+        &__icon {
+          width: 100px;
+          height: 60px;
+        }
+      }
+      
+      .email {
+        font-size: 16px;
+        line-height: 1.25;
         letter-spacing: 0.03em;
-        color: #212121;
-        margin-bottom: 50px;}
-.clients__list {display:flex;gap:30px;}
-.clients__logo {display: flex; border: 1px solid #AFB1B8; border-radius: 4px;
-                width: 170px; height: 92px; transition:  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                align-items: center;
-                justify-content: center;
-                &:hover, &:focus {border-color:#2196F3;}}
-.clients__svg {fill:hsl(227, 6%, 70%);transition: fill  250ms cubic-bezier(0.4, 0, 0.2, 1);
-.clients__logo:hover &, .clients__logo:focus & {fill:#2196F3;}}
-
+      
+        color: rgba(255, 255, 255, 0.6);
+      }

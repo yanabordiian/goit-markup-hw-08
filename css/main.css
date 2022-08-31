@@ -121,11 +121,12 @@ img {
   padding: 10px 32px;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: inline;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
+  background-color: #2196F3;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0);
   border-radius: 4px;
   cursor: pointer;
@@ -139,7 +140,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  background: #2196F3;
 }
 
 button {
@@ -156,7 +156,7 @@ button {
   text-shadow: none;
   display: inline-block;
   text-align: center;
-  align-items: flex-start;
+  align-items: center;
   cursor: pointer;
   box-sizing: border-box;
   background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
@@ -171,9 +171,6 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-right: 0px;
 }
 
@@ -654,7 +651,6 @@ button {
 
 .features__punctuality::before {
   background-image: url(../images/иконки/punctuality.svg);
-  width: 270px;
 }
 
 .features__planning::before {
@@ -663,11 +659,6 @@ button {
 
 .features__astronaut::before {
   background-image: url(../images/иконки/astronaut.svg);
-}
-
-.features__vector::before {
-  display: inline;
-  align-items: center;
 }
 
 .features__title {
@@ -934,6 +925,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .portfolio:nth-child(3n+1) {
   padding-right: 0px;
