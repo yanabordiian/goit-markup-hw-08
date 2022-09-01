@@ -2,10 +2,7 @@
 .header {
     position: relative;
     border-bottom: 1px solid #ececec;
-  
-    @include mq(mob-only) {
-      padding: 16px 0;
-    }
+    @include mq(mob-only) { padding: 16px 0;}
   }
   .header__container {
     position: relative;
@@ -13,40 +10,31 @@
     align-items: center;
   }
   .header__wrapper {
-    background-color: $white-color;
-  
+    background-color: $white-color; 
     @include mq(mob-only) {
       position: fixed;
       top: 0;
       left: 0;
-  
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  
       width: 100vw;
       height: 100vh;
       padding: 48px 40px;
-  
       z-index: 2;
       font-size: 40px;
       line-height: 1.17;
       letter-spacing: 0.02em;
-  
       transform: translateX(100%);
       transition: transform $transition;
-      &.is-open {
-        transform: translateX(0);
-      }
+      &.is-open {transform: translateX(0);}
     }
     @include mq(tab) {
       display: flex;
       align-items: center;
-  
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.02em;
-  
       color: $primary-text-color;
     }
   }
@@ -56,34 +44,23 @@
     right: 25px;
   
     display: flex;
-  
     padding: 0;
     border: none;
     cursor: pointer;
     z-index: 5;
     background-color: transparent;
-    @include mq(tab) {
-      display: none;
-    }
+    @include mq(tab) {display: none;}
     &:hover,
-    &:focus {
-      fill: $accent-color;
-    }
+    &:focus {fill: $accent-color;}
     &.is-open .menu__button--icon {
       position: fixed;
       top: 11px;
       right: 25px;
     }
   }
-  .menu__close {
-    display: none;
-  }
-  .is-open .menu__close {
-    display: block;
-  }
-  .is-open .menu__burger {
-    display: none;
-  }
+  .menu__close {display: none;}
+  .is-open .menu__close { display: block;}
+  .is-open .menu__burger {display: none;}
   .nav {
     @include mq(tab) {
       margin-right: 70px;
@@ -93,25 +70,15 @@
     }
   }
   .site-nav {
-    @include mq(tab) {
-      display: flex;
-    }
+    @include mq(tab) {display: flex; }
     @include mq(mob-only) {
-      &__item:not(:last-child) {
-        margin-right: 32px;
-      }
+      &__item:not(:last-child) { margin-right: 32px; }
     }
     @include mq(tab) {
-      &__item:not(:last-child) {
-        margin-right: 50px;
-      }
+      &__item:not(:last-child) { margin-right: 50px;}
     }
-    .site-nav__link--certain {
-      color: $accent-color;
-    }
-    &__link--certain {
-      position: relative;
-    }
+    .site-nav__link--certain { color: $accent-color;}
+    &__link--certain {position: relative;}
     &__link {
       display: block;
       padding: 32px 0;
@@ -134,9 +101,7 @@
       }
     }
     &__link:hover,
-    &__link:focus {
-      color: $accent-color;
-    }
+    &__link:focus { color: $accent-color; }
   }
   @include mq(tab) {
     .site-nav__link--certain::after {
@@ -176,10 +141,7 @@
       margin-right: 10px;
       text-align: center;
       fill: currentColor;
-      @include mq(mob-only) {
-        display: none;
-      }
-    }
+      @include mq(mob-only) { display: none; }}
   
     &__link--phone {
       @include mq(mob-only) {
@@ -197,25 +159,15 @@
       }
     }
   
-    &__item:not(:last-child) {
-      @include mq(mob-only) {
-        margin-bottom: 32px;
-      }
-    }
-    &__item:not(:last-child) {
-      @include mq(desk) {
-        margin-right: 30px;
-      }
-    }
+    &__item:not(:last-child) {@include mq(mob-only) { margin-bottom: 32px;}}
+    &__item:not(:last-child) {@include mq(desk) { margin-right: 30px;} }
     &__item:not(:last-child) {
       @media (min-width: 768px) and (max-width: 1200px) {
         margin-bottom: 10px;
       }
     }
     &__link:hover,
-    &__link:focus {
-      color: $accent-color;
-    }
+    &__link:focus {color: $accent-color;}
     &__link--mail {
       color: $secondary-text-color;
       @include mq(mob-only) {
@@ -252,9 +204,7 @@
     flex-wrap: wrap;
     color: $accent-color;
   
-    @include mq(tab) {
-      display: none;
-    }
+    @include mq(tab) {  display: none;}
     &--link {
       font-weight: 500;
       font-size: 18px;
@@ -266,7 +216,5 @@
   .header__socials--item {
     padding: 0 10px;
     font-size: 18px;
-    &:not(:last-child) {
-      border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
+    &:not(:last-child) {border-right: 1px solid rgba(33, 33, 33, 0.2);}
   }

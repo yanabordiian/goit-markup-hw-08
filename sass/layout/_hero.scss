@@ -3,60 +3,16 @@
   margin: 0 auto;
   padding: 118px 0;
   text-align: center;
-
-  @include mq(desk) {
-    padding: 200px 0;
-  }
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero/heromobile1x.jpg);
+  @include mq(desk) {padding: 200px 0;}
+  background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4) ), url(../../images/office-mobile.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/heromobile2x.jpg);
-  }
-  @include mq(tab) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/herotablet1x.jpg);
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/herotablet2x.jpg);
-  }
-  @include mq(desk) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/herodesk1x.jpg);
-  }
-  @include mq(retina) {
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../images/hero/herodesk2x.jpg);
-  }
+  @include mq(retina) {background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),url(../../images/office-mobile.jpg);}
+  @include mq(tab) {background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4) ),url(../../images/office-tablet.jpg);}
+  @include mq(retina) {background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/office-tablet.jpg);}
+  @include mq(desk) {background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../../images/office.jpg);}
+  @include mq(retina) {background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url(../../images/office.jpg);}
   &__title {
     margin-bottom: 30px;
     font-weight: 900;

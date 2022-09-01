@@ -1,41 +1,28 @@
 .benefits {
     &__title {
       margin-bottom: 10px;
-  
       font-weight: 700;
       font-size: 14px;
       line-height: 1.14;
       text-align: center;
       text-transform: uppercase;
-  
-      @include mq(tab) {
-        text-align: start;
-      }
+      @include mq(tab) {text-align: start;}
     }
     &__text {
       font-size: 14px;
       line-height: 1.71;
-  
       color: $secondary-text-color;
     }
     &__list {
       display: grid;
       gap: 30px;
-      @include mq(tab) {
-        grid-template-columns: 1fr 1fr;
-      }
-      @include mq(desk) {
-        width: 270px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
+      @include mq(tab) {grid-template-columns: 1fr 1fr;}
+      @include mq(desk) {width: 270px;grid-template-columns: 1fr 1fr 1fr 1fr;}
     }
     &__item {
       width: 100%;
-      @include mq(tab) {
-        width: 354px;
-        @include mq(desk) {
-          width: 270px;
-        }
+      @include mq(tab) {width: 354px;
+      @include mq(desk) { width: 270px}
       }
     }
     
@@ -43,14 +30,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-  
       height: 120px;
       margin-bottom: 30px;
       background-color: $btn-color2;
       border-radius: 4px;
     }
-    &__icon {
-      width: 70px;
-      height: 70px;
-    }
+    &__icon {width: 70px; height: 70px;}
   }

@@ -1,72 +1,108 @@
-:root {
-    /* Основные шрифты и цвета */
-    --main-font: Roboto, sans-serif;
-    --secondary-font: Raleway, sans-serif;
-    $black: #212121;
-    $grey: #757575;
-    $white: #FFFFFF;
-    $blue: #2196F3;
-    $light: #F5F4FA;
-    $rgba: rgba(255, 255, 255, 0.6);}
+$primary-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-color: #2196f3;
+$white-color: #ffffff;
+$btn-color2: #f5f4fa;
+$transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    body {
-        background-color: #FFFFFF;; 
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.03em;
-      }
-   
-     
+body {
+  background-color: $white-color;
+  font-family: "Roboto", sans-serif;
+  color: $primary-text-color;
+  letter-spacing: 0.03em;
+}
+/* утилиты */
 
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-      }
-      /* container */
-      .container {
-        margin: 0 auto;
-        padding: 0 15px;
-      
-        @media screen and(min-width:480px) {
-          width: 480px;
-        }
-        @media screen and (min-width: 768px) {
-          width: 768px;
-        }
-        @media screen and (min-width: 1200px) {
-          width: 1200px;
-        }
-      }
-      
-      .section {
-        padding: 60px 0;
-      
-        @media screen and (min-width: 1200px) {
-          padding: 94px 0;
-        }
-      }
-      .section__title {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 1.17;
-        text-align: center;
-        margin-bottom: 30px;
-      
-        @media screen and (min-width: 1200px) {
-          font-size: 36px;
-          margin-bottom: 50px;
-        }
-      }
-      
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        border: 0;
-        padding: 0;
-        white-space: normal;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
-        overflow: hidden;
-      }
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* container */
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media screen and(min-width:480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+
+.section {
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+.section__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.button {
+  background-color: $accent-color;
+  color: $white-color;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  min-height: 50px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  transition: $transition;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
