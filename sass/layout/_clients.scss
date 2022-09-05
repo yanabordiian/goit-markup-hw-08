@@ -23,11 +23,12 @@
           border-radius: 4px;
           box-sizing: border-box;
           transition: var(--anim);
+          &__link:hover, &__link:focus {
+            fill: $accent-color;
+            border-color: $accent-color;
+          }
         }
-        &__link:hover,&__link:focus {
-          fill: $accent-color;
-          border-color: $accent-color;
-        }
+        
         &__icon {
           width: 100px;
           height: 60px;

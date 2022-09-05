@@ -97,6 +97,7 @@
       @include mq(desk) {
         width: 448px;
       }
+      &__input:focus {outline:0; border-color:$accent-color;}
     }
   
     &__textarea {
