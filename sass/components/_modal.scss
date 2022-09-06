@@ -93,11 +93,12 @@
       background-color: transparent;
       border: 1px solid rgba(33, 33, 33, 0.2);
       border-radius: 4px;
+      outline:none;
       transition: border-color $transition;
       @include mq(desk) {
         width: 448px;
       }
-      &__input:focus {outline:0; border-color:$accent-color;}
+      &__input:focus, &__input:hover {outline:none; border-color:$accent-color;}
     }
   
     &__textarea {
@@ -122,6 +123,7 @@
       color: rgba(117, 117, 117, 0.5);
     }
     &__textarea:hover {
+      outline:none;
       border-color: $accent-color;
       cursor: pointer;
     }

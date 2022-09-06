@@ -1,5 +1,6 @@
 .footer {
     background-color: #2f303a;
+    padding: 60px 0;
     &__logo-in {
       margin-bottom: 60px;
       @include mq(no-desk) {width: 100%;}
@@ -65,7 +66,7 @@
       border-radius: 50%;
       fill: $white-color;
       background-color: rgba(255, 255, 255, 0.1);
-      transition: $transition;
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     &__socials:hover,
     &__socials:focus {
@@ -76,7 +77,7 @@
     &__item:not(:last-child) {margin-right: 10px;}
   }
   .contacts {
-    padding: 60px 0;
+    
     @include mq(desk) { display: flex;align-items: baseline;}
   }
   .address {
@@ -87,8 +88,9 @@
       font-size: 14px;
       line-height: 1.71;
       color: $white-color;
-      transition: $transition;
-    }
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+    &__link--map:hover {color: $accent-color;}
     &__link {
       font-style: normal;
       font-size: 14px;
