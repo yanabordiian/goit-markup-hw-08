@@ -52,6 +52,7 @@
     &__input:hover + .form__icon {
       fill: $accent-color;
     }
+    &__input:focus-within {outline:none; border-color: $accent-color;}
     &__input:hover {
       border-color: $accent-color;
       cursor: pointer;
@@ -116,6 +117,7 @@
         width: 448px;
       }
     }
+    &__textarea:focus-within {outline:none; border-color: $accent-color;}
     &__textarea ::placeholder {
       font-size: 12px;
       line-height: 1.16;

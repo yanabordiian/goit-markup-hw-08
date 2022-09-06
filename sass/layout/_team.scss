@@ -46,7 +46,7 @@
       height: 44px;
       border-radius: 50%;
       fill: #afb1b8;
-      transition: $transition;
+      transition: background-color $transition, fill $transition;
     }
     &__item:not(:last-child) { margin-right: 10px;}
     &__link:hover,

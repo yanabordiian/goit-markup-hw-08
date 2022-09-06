@@ -60,6 +60,7 @@
     &__item {
       border: 1px Solid #eeeeee;
       max-width: 450px;
+      transition: box-shadow $transition;
       @include mq(tab) {width: 354px;}
       @include mq(desk) {width: 370px;}
     }
