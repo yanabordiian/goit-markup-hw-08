@@ -928,7 +928,7 @@ img {
   cursor: pointer;
   background-color: #f5f4fa;
   color: #212121;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects__button:hover, .projects__button:focus {
   background-color: #2196f3;
@@ -1050,7 +1050,7 @@ img {
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close__button:hover, .close__button:focus {
   fill: #2196f3;

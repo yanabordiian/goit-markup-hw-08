@@ -25,7 +25,7 @@
       cursor: pointer;
       background-color: $btn-color2;
       color: $primary-text-color;
-      transition: $transition;
+      transition: background-color $transition, color $transition;
     }
     &__button:hover,&__button:focus {
       background-color: $accent-color;
